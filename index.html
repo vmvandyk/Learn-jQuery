@@ -1,33 +1,31 @@
 
 <!doctype html>
-<html class="no-js" lang="">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Learn jQuery</title>
-    <meta name="description" content="Lesson 1 Introduction to jQuery">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-    <h1 id="target">Lesson 1 Introduction to jQuery</h1>
+    <h1 id="target1">Lesson 1 Introduction to jQuery</h1>
     <p id="target2">This file has used HTML5 Boilerplate as a template for beginning our jQuery journey.</p>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
+
     //Comment1:JavaScript essentially has 2 parts: Variables and Functions.
     //Comment2:Variables store information and Functions perform actions. Variables are defined by var and Functions are defined by function.
-      console.log("Hello World! This is JavaScript")
-      var target=$("#target")
-      console.log(target.text())
-      target.on("click", function(){
-        console.log("clicked header1")
+
+      $("#target1").on("click", function(){
+        console.log($("#target1").text())
       })
+
       $("#target2").on("click", function(){
-        console.log("clicked paragraph" + $("#target2").text())
+        console.log($("#target2").text())
       })
+
     </script>
-  </body>
-</html>
+    </body>
+  </html>
 
   
     
