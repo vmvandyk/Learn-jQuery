@@ -6,14 +6,17 @@
   </head>
 
   <body>
-    <h1 id="target1">Lesson 1 Introduction to jQuery</h1>
-    <p id="target2">This file has used HTML5 Boilerplate as a template for beginning our jQuery journey.</p>
+    <h1 id="target1">Lesson 2 Functions</h1>
+    <p id="target2">To use the functions defined below, right click 'Inspect' and open the console.</p>
+    <p>In the console, type the following:</p>
+    <pre>greenToOrange("green")</pre>
+    <pre>greenToOrange("black")</pre>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
 
-    //Comment1:JavaScript essentially has 2 parts: Variables and Functions.
-    //Comment2:Variables store information and Functions perform actions. Variables are defined by var and Functions are defined by function.
+    //Comment:JavaScript essentially has 2 parts: Variables and Functions.
+    //Comment:Variables store information and Functions perform actions. Variables are defined by var and Functions are defined by function.
 
       $("#target1").on("click", function(){
         console.log($("#target1").text())
@@ -23,6 +26,25 @@
         console.log($("#target2").text())
       })
 
+    //Comment: There are two function definitions below: greenToOrange and colourToHexadecimal. 
+    //Comment: Function definitions contain the logic of what a function does. 
+      function greenToOrange(green)  {
+        if(green==="green"){
+          return "orange"
+        }
+        else {
+          return "This is not a known colour"
+        }
+      }
+      
+      function colourToHexadecimal(colour) {
+        if(colour==="green"){
+          return "#00ff00"
+        }
+        else {
+          return "This is not a known colour"
+        }
+      }
     </script>
     </body>
   </html>
