@@ -26,7 +26,7 @@
         console.log($("#target2").text())
       })
 
-    //Comment: There are two function definitions below: greenToOrange and colourToHexadecimal. 
+    //Comment: There are three function definitions below: greenToOrange, colourToHexadecimal and fullName. 
     //Comment: Function definitions contain the logic of what a function does. 
       function greenToOrange(green)  {
         if(green==="green"){
@@ -45,6 +45,11 @@
           return "This is not a known colour"
         }
       }
+      
+      function fullName(firstName, lastName)  {
+        return `${firstName} ${lastName}`
+      }
+      
     </script>
     </body>
   </html>
